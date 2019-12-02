@@ -1,6 +1,9 @@
 # tmhOAuth
 
-An OAuth library written in PHP by @themattharris.
+An OAuth library written in PHP by @themattharris. This version has been forked from https://github.com/themattharris/tmhOAuth
+
+The only difference is providing a fix for the following error:
+Function name, class name, namespace name or constant name can not be reserved keyword '__DIR__' (since version 5.3)
 
 **Disclaimer**: This project is a work in progress. Please use the issue tracker
 to report any enhancements or issues you encounter.

@@ -11,7 +11,7 @@
  *
  * 06 Aug 2014
  */
-defined('__DIR__') or define('__DIR__', dirname(__FILE__));
+defined('__TMHOAUTHDIR__') or define('__TMHOAUTHDIR__', dirname(__FILE__));
 
 class tmhOAuth {
   const VERSION = '0.8.4';
@@ -67,8 +67,8 @@ class tmhOAuth {
         // you can get the latest cacert.pem from here http://curl.haxx.se/ca/cacert.pem
         // if you're getting HTTP 0 responses, check cacert.pem exists and is readable
         // without it curl won't be able to create an SSL connection
-        'curl_cainfo'                => __DIR__ . DIRECTORY_SEPARATOR . 'cacert.pem',
-        'curl_capath'                => __DIR__,
+        'curl_cainfo'                => __TMHOAUTHDIR__ . DIRECTORY_SEPARATOR . 'cacert.pem',
+        'curl_capath'                => __TMHOAUTHDIR__,
 
         // in some cases (very very odd ones) the SSL version must be set manually.
         // unless you know why your are changing this, you should leave it as false
